@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>הקולנוע</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body onload="onMoviesPageLoad()">
+    <div class="app">
+      <h1>קולנוע 2000</h1>
+      <label>
+        <input
+          oninput="onSearchInputChange(this,event)"
+          class="search-input"
+          type="text"
+          placeholder="חיפוש..."
+        />
+      </label>
+    </div>
+    <div class="movie-type">
+      <h2
+        class="filter-type"
+        data-category="playing"
+        onclick="onCategorySelect('playing')"
+      >
+        עכשיו בקולנוע
+      </h2>
+      <h2
+        class="filter-type"
+        data-category="kids"
+        onclick="onCategorySelect('kids')"
+      >
+        ילדים
+      </h2>
+    </div>
+    <div class="movie-list" id="root"></div>
+    <script src="mock.js"></script>
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+  </body>
+</html>

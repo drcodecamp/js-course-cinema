@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>בחירת מושבים</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body onload="onSeatSelectionPageLoad()">
+    <header class="selection-header">
+      <div class="movie-preview" id="movie-preview">
+        <div class="movie-cover">
+          <img
+            src="https://res.cloudinary.com/dvvx6eoye/image/upload/v1650763980/academy/tutorials/Sonic%20the%20Hedgehog.jpg"
+            alt="movie"
+          />
+        </div>
+        <div class="movie-information">
+          <div class="movie-specs">
+            <div>נקמה ללא מעצורים</div>
+            <div>יום שבת 24.4.22</div>
+            <div>22:00</div>
+          </div>
+          <div class="movie-location">סינימה סיטי רשל"צ</div>
+        </div>
+      </div>
+      <div class="solid-text">בחרו מושבים</div>
+    </header>
+    <div class="seats-selection">
+      <div class="seats-container">
+        <div class="screen-text">מסך</div>
+        <div class="seats-screen"></div>
+        <div class="seats" id="root"></div>
+      </div>
+      <div class="order-actions">
+        <div>
+          <button class="order-button" onclick="onCompleteOrder()">המשך</button>
+          <button class="back-button" onclick="onBackButtonClick()">
+            חזור
+          </button>
+        </div>
+        <div class="order-summary" id="summary">לא נבחרו כרטיסים</div>
+      </div>
+    </div>
+
+    <script src="mock.js"></script>
+    <script src="controller.js"></script>
+    <script src="model.js"></script>
+    <script src="view.js"></script>
+  </body>
+</html>

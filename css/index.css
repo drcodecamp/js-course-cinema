@@ -1,0 +1,292 @@
+body {
+  margin: 0;
+  direction: rtl;
+  background-color: #1d2256;
+  font-family: Roboto, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 64px;
+  margin: 0;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  max-width: 1315px;
+  background-color: #e9405b;
+  margin: 0 auto;
+  height: 255px;
+}
+
+input {
+  margin: 0 auto;
+  border: none;
+  padding: 20px;
+  font-size: 22px;
+  color: black;
+  outline: none;
+}
+
+::placeholder {
+  color: #e9405b;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1315px;
+  margin: 0 auto;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+.movie-card a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.movie-card img {
+  width: 235px;
+  height: 340px;
+}
+.back-button {
+  background-color: #a93236;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 55px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.back-button:hover {
+  background-color: #a6494a;
+}
+
+.order-button {
+  background-color: #1a1a36;
+  color: white;
+  border: none;
+  cursor: pointer;
+  height: 55px;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.order-button:hover {
+  background-color: #31316b;
+}
+.order-button a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+
+.movie-type {
+  display: flex;
+  align-items: center;
+  max-width: 1315px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #c0c0c0;
+  margin: 22px;
+}
+h2:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.selection-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #1a1a36;
+  padding-bottom: 20px;
+}
+
+.seats-selection {
+  background-color: #daeff3;
+  flex: 1;
+}
+
+.solid-text {
+  color: white;
+  padding-top: 10px;
+  font-size: 42px;
+  text-align: center;
+}
+.screen-text {
+  padding-top: 10px;
+  font-size: 22px;
+  text-align: center;
+}
+
+.seats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 75px;
+}
+.seats-screen {
+  width: 50%;
+  min-width: 365px;
+  margin-top: 10px;
+  background-color: #9b9b9b;
+  height: 11px;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+}
+
+.seats-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.movie-preview {
+  display: flex;
+  min-width: 365px;
+  max-width: 1024px;
+}
+
+.movie-cover {
+  display: flex;
+  flex: 1;
+}
+.movie-cover img {
+  justify-self: center;
+  align-self: center;
+  height: 150px;
+}
+
+.movie-information {
+  font-size: 22px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  flex: 5;
+}
+
+.movie-title {
+  flex: 2;
+}
+
+.movie-specs {
+  display: flex;
+}
+
+.movie-specs {
+  justify-self: center;
+  flex: 1;
+  padding: 10px;
+}
+
+.movie-location {
+  padding: 10px;
+  flex: 1;
+}
+
+.seat-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 18px;
+  background-color: #ceb86b;
+  height: 55px;
+  width: 55px;
+  margin: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-align: center;
+  line-height: 55px;
+}
+
+.seat-icon:hover {
+  cursor: pointer;
+}
+.row-number {
+  width: 130px;
+  padding: 10px;
+  text-align: center;
+}
+.seat-row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.empty {
+  background-color: #8e8e8e;
+}
+
+.empty:hover {
+  background-color: #0bc36b;
+}
+
+.selected {
+  background-color: #0bc36b;
+}
+
+.order-actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1024px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.order-summary {
+  padding: 20px;
+  color: #0e0e0e;
+}
+
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: rgba(74, 74, 117, 0.65);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -55px;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
